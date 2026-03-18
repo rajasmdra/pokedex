@@ -2,7 +2,7 @@
   "name": "pokedex",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rajasmdra.github.io/Pokedex-react",
+  "homepage": "https://rajasmdra.github.io/pokedex",
   "type": "module",
   "scripts": {
     "dev": "vite",
