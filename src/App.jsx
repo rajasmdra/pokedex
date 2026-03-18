@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from './Home'
 import Pokedex from './Pokedex'
@@ -15,16 +15,18 @@ const NavigationBar = () => {
 
 const App = () => {
   return (
-    <div className='bg-yellow-200 text-center m-0'>
-      <BrowserRouter>
+    <div className="bg-yellow-200 min-h-screen text-center">
+      <HashRouter>
         <NavigationBar />
-        <Routes className='w-[90%] max-w-[640px] mx-auto'>
-          <Route path='/' element={<Home />} />
-          <Route path='/pokedex' element={<Pokedex />} />
-        </Routes>
-      </BrowserRouter>
+        <div className="w-[90%] max-w-[640px] mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/pokedex" element={<Pokedex />} />
+          </Routes>
+        </div>
+      </HashRouter>
     </div>
-  )
-}
+  );
+};
 
 export default App
