@@ -26,7 +26,7 @@ const Search = () => {
                 placeholder="Enter Pokemon name..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="text-orange-700 text-center text-sm px-10 py-1 m-3 focus:outline-none"
+                className="text-orange-700 text-center text-sm my-3 focus:outline-none"
             />
             <ul>
                 {input !== "" && (filteredPokemons.map((pokemon) => (

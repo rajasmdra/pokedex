@@ -18,7 +18,7 @@ const NavigationBar = () => {
 
 const App = () => {
   return (
-    <div className="bg-yellow-200 min-h-screen text-center flex flex-col">
+    <div className="bg-yellow-200 min-h-screen text-center flex flex-col overflow-hidden">
       <HashRouter>
         <NavigationBar />
         <div className="w-[90%] mx-auto flex flex-col flex-1 justify-center">
